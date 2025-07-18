@@ -1,0 +1,221 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--lighter);
+  color: var(--dark);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #5e8b7e;
+  --primary-dark: #436b67;
+  --secondary: #a7beae;
+  --accent: #e8a87c;
+  --success: #a7d7c5;
+  --warning: #f6bd60;
+  --danger: #f28482;
+  --light: #f8edeb;
+  --lighter: #f8edeb;
+  --card-bg: #faf3dd;
+  --form-bg: #f8edeb;
+  --dark: #2c363f;
+  --gray: #b5838d;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+.container {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.3px !important;
+  padding: 0.5rem 1.25rem !important;
+  transition: var(--transition) !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary) !important;
+  color: var(--dark) !important;
+  border: none !important;
+}
+
+.btn-secondary {
+  background-color: var(--secondary) !important;
+  color: var(--dark) !important;
+  border: none !important;
+}
+
+.btn-success {
+  background-color: var(--success) !important;
+  color: var(--dark) !important;
+  border: none !important;
+}
+
+.btn-warning {
+  background-color: var(--warning) !important;
+  color: var(--dark) !important;
+  border: none !important;
+}
+
+.btn-danger {
+  background-color: var(--danger) !important;
+  color: var(--dark) !important;
+  border: none !important;
+}
+
+.card {
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: var(--transition) !important;
+  box-shadow: var(--card-shadow) !important;
+  border: none !important;
+  background-color: var(--card-bg) !important;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3) !important;
+}
+
+.form-outline .form-control:focus~.form-label {
+  color: var(--primary) !important;
+}
+
+.form-outline .form-control:focus~.form-notch .form-notch-leading,
+.form-outline .form-control:focus~.form-notch .form-notch-middle,
+.form-outline .form-control:focus~.form-notch .form-notch-trailing {
+  border-color: var(--primary) !important;
+  border-width: 2px !important;
+}
+
+/* Form 
+styling */
+.form-control,
+.form-control-lg,
+.form-outline .form-control {
+  background-color: var(--form-bg) !important;
+  border-color: var(--gray) !important;
+  color: var(--dark) !important;
+}
+
+.form-outline .form-control~.form-notch .form-notch-leading,
+.form-outline .form-control~.form-notch .form-notch-middle,
+.form-outline .form-control~.form-notch .form-notch-trailing {
+  border-color: var(--gray) !important;
+  background-color: var(--form-bg) !important;
+}
+
+/* Alert styling */
+.alert-info {
+  background-color: var(--primary) !important;
+  color: var(--dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+.alert-danger {
+  background-color: var(--danger) !important;
+  color: var(--dark) !important;
+  border-color: var(--danger) !important;
+}
+
+/* Modal styling */
+.modal-content {
+  background-color: var(--card-bg) !important;
+}
+
+/* Dropdown styling */
+.dropdown-menu {
+  background-color: var(--card-bg) !important;
+  color: var(--dark) !important;
+  border: 1px solid var(--gray) !important;
+}
+
+/* Table styling */
+.table {
+  background-color: var(--card-bg) !important;
+  color: var(--dark) !important;
+}
+
+.table th,
+.table td {
+  border-color: var(--gray) !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(142, 192, 124, 0.1) !important;
+}
+
+/* Input group styling */
+.input-group-text {
+  background-color: var(--form-bg) !important;
+  border-color: var(--gray) !important;
+  color: var(--dark) !important;
+}
+
+/* Modal styling enhancements */
+.modal-content {
+  background-color: var(--card-bg) !important;
+  color: var(--dark) !important;
+  border: 1px solid var(--gray) !important;
+}
+
+.modal-header,
+.modal-footer {
+  border-color: var(--gray) !important;
+}
+
+/* Link styling */
+a {
+  color: var(--primary) !important;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.9;
+  color: var(--accent) !important;
+}
+
+/* Form label styling */
+.form-label {
+  color: var(--dark) !important;
+}
+
+/* Dropdown item styling */
+.dropdown-item {
+  color: var(--dark) !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: var(--primary-dark) !important;
+  color: var(--dark) !important;
+}
